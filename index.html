@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Program</title>
+    <style>
+      body { font: normal 14px arial; background:#ddd;}
+      .task { margin:0 auto; max-width:450px; background-color: #fff; box-shadow: 0 10px 10px #ccc; padding:40px; margin-top:17%; text-align: center;}
+      .btn { background:#555; padding:4px 20px; margin-right:10px; color:#fff; font-size:16px; border:0; margin-bottom:5px;}
+      button:hover{ opacity:0.7;}
+
+      h1 { font-size:27px;}
+      h4 { font-weight: normal;}
+      .btn.on { background: #4C9900;}
+      .btn.off { background: #CC0000;}
+
+      @media only screen and (max-width: 600px) {
+        .task { }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="task">
+      <h1>TASK</h1>
+      <form>
+        <h4>What do you want to do?</h4>
+        <button type="submit" name="state" value="0" id="on" class="btn on">ON</button>
+        <button type="submit" name="state" value="1" id="off" class="btn off">OFF</button>
+      </form>
+    </div>
+  </body>
+</html>
